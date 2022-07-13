@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: rgba(225, 247, 253, 0.8);
+  min-height: 100vh;
+}
+.container {
+  width: 80%;
+  margin: 5rem auto;
+}
+header {
+  min-height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 2rem;
+  row-gap: 4rem;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.card h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.card p {
+  padding: 2rem 0;
+  line-height: 1.2;
+}
+.content {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c d b";
+  grid-gap: 1rem;
+}
+.holder {
+  padding: 2rem;
+  line-height: 1.5;
+}
+.holder h2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.holder-1 {
+  grid-area: a;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.holder-2 {
+  grid-area: b;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.holder-3 {
+  grid-area: c;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.holder-4 {
+  grid-area: d;
+  background-color: rgba(250, 225, 225, 0.2);
+}
